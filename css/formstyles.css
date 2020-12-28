@@ -1,0 +1,66 @@
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+#mainSubmitCancel {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+fieldset {
+    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+}
+
+/* lable default style */
+label {
+    float: left;
+    clear: both;
+    width: 30%;
+    margin-top: 10px;
+}
+/* input, select default style */
+input,
+select {
+    float: right;
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* textarea */
+.descLabel {
+    width: 30%;
+}
+
+textarea {
+    width: 70%;
+    margin-top: 10px;
+}
+
+/* submit & cancel button - resize button width */
+.button {
+    width: auto;
+    margin: 15px;
+}
+
+/* Tablet styles 1024 px */
+@media only screen and (max-width: 1024px) {
+    fieldset {
+        margin-bottom: 10px;
+    }
+}
+
+/* Mobile styles 768 px */
+@media only screen and (max-width: 768px) {
+    #mainContainer {
+        flex-direction: column;
+    }
+
+    fieldset {
+        margin-bottom: 10px;
+    }
+}

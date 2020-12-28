@@ -1,0 +1,398 @@
+/* Styling body & container */
+header, nav, main, footer, aside, section, article, figure, figcaption { display: block; }
+* {
+   box-sizing: border-box;
+}
+body{
+   font-family:Verdana, Arial, sans-serif;   
+}
+#wrapper {
+   width:80%;
+   margin: 0;
+   min-width: 320px;
+   max-width: 1200px;
+   margin-left:auto;
+   margin-right: auto;
+}
+
+/* Layout */
+#container {
+   display: flex;
+   flex-direction: row;
+}
+#main {
+   flex: 7;
+}
+#right {
+   flex: 3;
+}
+
+.sectionContainer img, .sectionContainer iframe, .sectionContainer source {
+   width: 100%;
+   height: 300px;
+}
+
+.columnContainer {
+   display: flex;
+   flex-direction: row;
+}
+
+.column {
+   margin: 3px;
+   width: 100%;
+}
+
+.detailColumn {
+   margin: 3px;
+   width: 100%;
+}
+
+.detailColumn img, .detailColumn iframe, .detailColumn source {
+   width: 100%;
+   height: 400px;
+}
+
+
+/* Header style */
+h1 {
+   color: #EE4420;
+   padding-left: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-bottom: 0px;
+}
+
+/* Navigation styles */
+nav ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+
+nav li {
+   list-style-type: none;
+}
+
+nav a {
+   display: block;
+   text-align: center;
+   text-decoration-line: none;
+   color: rgb(0,0,0);
+   border-radius: 20px;
+   padding:10px 20px 10px 20px;
+   margin: 5px 25px 5px 0px;
+   font-weight: bold;
+}
+
+nav a:link {
+   color:rgb(0,0,0);
+}
+
+nav a:visited {
+   color: rgb(0,0,0);
+}
+
+nav a:hover {
+   color: #EE4420;
+   font-weight: bold;
+}
+
+
+ /* Styling section */
+main h2 {
+   background-image: linear-gradient(to right, #969789, #41342B);
+   color: rgb(255,255,255);
+   margin-top: 0px;
+   margin-bottom: 0px;
+   font-size: 1.0em;
+   padding: 5px 2px 5px 5px;
+}
+main h2 a {
+   color: rgb(255,255,255);
+   text-decoration: none;
+}
+main h3 {
+   margin-top: 0px;
+   margin-bottom: 3px;
+   font-size: 1.0em;
+}
+main h4 {
+   margin-top: 0px;
+   font-size: 0.9em;
+   font-weight: normal;
+}
+main p {
+   margin-top: 5px;
+   font-size: 1.0em;
+   font-family: Arial, sans-serif;    
+}
+
+a {
+   text-decoration-line: none;
+   color:rgb(0,0,0);
+}
+
+a:link {
+   color:rgb(0,0,0);
+}
+
+a:visited {
+   color: rgb(0,0,0);
+}
+
+a:hover {
+   color:#EE4420;
+}
+
+#colRating, #colCommentLabel, #colMapLabel, #colLinkLabel {
+   font-size : 1.1em;
+}
+
+#colDescription {
+   line-height: 2.0;
+}
+
+#colReview {
+   line-height: 2.0;
+}
+
+#colStar {
+   color: orange;
+   font-Size: 1.5em;
+   margin-bottom: 5px;
+}
+
+#colMap {
+   height: 400px;
+   margin-bottom: 15px;
+}
+
+#colMapByAPI {
+   height: 400px;
+   margin-bottom: 15px;
+}
+
+
+/* Aside styles */
+aside h2 {
+   background-image: linear-gradient(to right, #969789, #41342B);
+   color: rgb(255,255,255);
+   text-align: center;
+   font-size: 1.2em;
+   margin: 10px;
+   border-radius: 10px;
+}
+aside h3 {
+   text-align: left;
+   font-size: 1.0em;
+   padding-left: 5px;
+}
+aside h4 {
+   text-align: left;
+   font-size: 1.0em;
+   padding-left: 5px;
+}
+aside p {
+   margin: 2px 2px 2px 15px;
+   padding: 5px;
+   font-size: 1.0em;
+   font-family: Arial, sans-serif;    
+}
+aside a {
+   text-decoration-line: none;
+   color:rgb(0,0,0);
+}
+
+aside a:link {
+   color:rgb(0,0,0);
+}
+
+aside a:visited {
+   color: rgb(0,0,0);
+}
+
+aside a:hover {
+   color:#EE4420;
+}
+
+#right_section1 {
+   margin: 5px 10px 5px 15px;
+   padding: 10px;
+   box-shadow: 0px 0px 5px 5px gray;
+   border-radius: 20px;
+}
+#right_section2 {
+   margin: 0px 10px 5px 15px;
+   padding: 10px;
+   box-shadow: 0px 0px 5px 5px gray;
+   border-radius: 20px;
+}
+.touristSites {
+   padding-left: 5px;
+}
+.touristSites img {
+   width: 35px;
+   height: 20px;
+   padding-right: 5px;
+}
+.touristSites a {
+   display: block;
+   text-align: left;
+   text-decoration-line: none;
+   color: rgb(0,0,0);
+   padding:5px 5px 15px 5px;
+}
+
+/* Footer styles */
+footer {
+   background-color: #EE4420;
+   color: rgb(0,0,0);
+   text-align: center;
+   padding: 10px;
+}
+
+/* Home page */
+.slideContainer {
+   position: relative;
+   margin: auto;
+}
+.slideMediasContainer {
+   display: none;
+}
+.slideMedias {
+   height: 400px;
+   width: 100%;
+}
+.slideText {
+   width: 100%;
+   position: absolute;
+   bottom: 20px; 
+   text-align: center;  
+   color:rgb(255,255,255);
+   font-size: 1.3em;
+}
+.slideText a {
+   color:rgb(255,255,255);
+}
+
+.slideText a:link {
+   color:rgb(255,255,255);
+}
+
+.slideText a:visited {
+   color:rgb(255,255,255);
+}
+
+.slideText a:hover {
+   color:#EE4420;
+}
+
+.prevSlideButton {
+   position: absolute;
+   top: 40%;
+   left: 0;
+}
+.nextSlideButton {
+   position: absolute;
+   top: 40%;
+   right: 0;
+}
+.prevSlideButton, .nextSlideButton {
+   padding: 20px;
+   color: #EE4420;
+   font-weight: bold;
+   font-size: 30px;
+   opacity: 0.5;
+}
+.prevSlideButton:hover, .nextSlideButton:hover {
+   background-color: rgba(184, 179, 179, 0.1);
+}
+
+
+ /* Sub pages styles */
+ .sub_centerContainer {
+   background-color: #fab753;
+   color: rgb(255,255,255);
+ }
+ .sub_centerContainer h2 {
+   width: 100%;
+   text-align: center;  
+   color: rgb(255,255,255);
+   font-size: 1.5em;
+   margin-top: 0px;
+   margin-bottom: 5px;
+ }
+ .sub_centerContainer p {
+   width: 100%;
+   text-align: center;  
+   color: rgb(255,255,255);
+   font-size: 0.8em;
+   margin-top: 0px;
+   margin-bottom: 5px;
+   padding-bottom: 5px;
+ }
+
+/* Tablets styles 0px to 1024px */
+@media only screen and (max-width: 1024px) {
+   .slideContainer {
+      /* display: none; */
+   }
+
+   .columnContainer {
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   .column {
+      margin: 3px;
+      width: 48.3%;
+   }
+}
+
+
+/* Mobile styles 0px to 768px */
+@media only screen and (max-width: 768px) {
+   .slideContainer {
+      display: none;
+   }
+   
+   #container {
+      flex-direction: column;
+   }
+   .columnContainer {
+      flex-direction: column;
+   }
+   .column {
+      margin: 3px;
+      width: 100%;
+   }
+
+   nav ul {
+      flex-direction: column;
+   }
+   nav, nav ul, nav li { padding: 0; }
+   nav {
+      margin-bottom: 5px;
+   }
+   nav a {
+      border-bottom: 2px ridge #224D4A;
+      padding: 0.5em 0;
+      margin:0;
+   }
+   .touristSites img {
+      width: 100px;
+      height: 50px;
+      padding-right: 25px;
+   }
+   .touristSites a {
+      display: block;
+      text-align: left;
+      text-decoration-line: none;
+      color: rgb(0,0,0);
+      padding:5px 5px 15px 5px;
+      margin: 5px 5px 5px 40px;
+      font-size: 1.3em;
+   }
+}
