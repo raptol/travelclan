@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Travel Together</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/scriptdata.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-aR0Z4Bl2BBHd0N243YS6ilE5a-7W8iM&v=3.exp"></script>
+    </head>
+
+    <body onload="displayDetail();">  
+        <div id="wrapper">
+            <header>
+                    <h1>Travel Together</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="themetravel.html">Theme Travel</a></li>
+                    <li><a href="memorableplaces.html">Memorable Places</a></li>
+                    <li><a href="travelroutes.html">Travel Routes</a></li>
+                    <li><a href="mytravel.html">My Travel</a></li>
+                </ul>
+            </nav>
+            <div class="sub_centerContainer">
+                <h2>Detail Travel</h2>
+                <p></p>
+            </div>
+            <div id="container">
+                <main id="main">
+                    <div class="sectionContainer">
+                        <div class="columnContainer">
+                            <div class="detailColumn">
+                                <div id="colMedia"></div>
+                                <h3 id="colTitle"></h3>
+                                <p id="colDescription"></p>
+                                <h3 id="colRatingLabel">User Rating</h3>
+                                    <p id="colStar"></p>
+                                <h3 id="colCommentLabel">Comments</h3>
+                                    <form>
+                                        <input id="colKeyValue" hidden>
+                                        <input type="text" name="colComment" id="colComment">
+                                        <input type="button" name="btnComment" id="btnComment" value="Add" onclick="addComment(this.form);">
+                                    </form>
+                                    <p id="colReview"></p>
+                                <h3 id="colMapLabel">Location</h3>
+                                    <div id="colMapByAPI"></div>
+                                    <p>(Google, 2020)</p>
+                                <h3 id="colLinkLabel">Links</h3>
+                                    <div id="colLink"></div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <footer>
+                <small> 
+                    <i>Copyright &copy; 2020 Sung-won Kim 300320693<br></i>
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>

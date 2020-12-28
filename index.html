@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Travel Together</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/scriptdata.js"></script>
+    </head>
+
+    <body onload="displayHome();">
+        <div id="wrapper">
+            <header>
+                    <h1>Travel Together</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="themetravel.html">Theme Travel</a></li>
+                    <li><a href="memorableplaces.html">Memorable Places</a></li>
+                    <li><a href="travelroutes.html">Travel Routes</a></li>
+                    <li><a href="mytravel.html">My Travel</a></li>
+                </ul>
+            </nav>
+            <div id="homeTopSlide" class="slideContainer">
+                <!-- Convert Static HTML to Dynamic Code
+                <div class="slideMediasContainer">
+                    <input value="1" hidden>
+                    <img class="slideMedias" src="">
+
+                    
+                    <h3 class="slideText"><a onclick="detailTravel(this);"></a></h3>
+                    <p hidden></p>
+                </div>
+                <div class="slideMediasContainer">
+                    <input value="2" hidden>
+                    <img class="slideMedias" src="">
+                    <h3 class="slideText"><a onclick="detailTravel(this);"></a></h3>
+                    <p hidden></p>
+                </div>
+                <div class="slideMediasContainer">
+                    <input value="3" hidden>
+                    <img class="slideMedias" src="">
+                    <h3 class="slideText"><a onclick="detailTravel(this);"></a></h3>
+                    <p hidden></p>
+                </div> -->
+                <input type="button" value="&#60;" class="prevSlideButton" onclick="previousSlide();">
+                <input type="button" value="&#62;" class="nextSlideButton" onclick="nextSlide();">
+                <!-- <script>
+                    startSlides();
+                </script> -->
+            </div>
+            <div id="container">
+                <main id="main">
+                    <div id="today" class="sectionContainer">
+                        <!-- <h2>Today's Journey</h2>
+                        <div class="columnContainer">
+                            <div class="column">
+                                <input value="4" hidden>
+                                <img src="images/brycecanyon.jpg" alt="Bryce Canyon">
+                                <h3><a onclick="detailTravel(this);"></a></h3>
+                                <p></p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div id="sportlight" class="sectionContainer">
+                        <!-- <h2>Sportlight</h2>
+                        <div class="columnContainer">
+                            <div class="column">
+                                <input value="5" hidden>
+                                <iframe src="https://www.youtube.com/embed/3P1CnWI62Ik" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3><a onclick="detailTravel(this);"></a></h3>
+                                <p></p>
+                            </div>
+                            <div class="column">
+                                <input value="6" hidden>
+                                <iframe src="https://www.youtube.com/embed/7lvXbfNBIQg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h3><a onclick="detailTravel(this);"></a></h3>
+                                <p></p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div id="popular" class="sectionContainer">
+                        <!-- <h2>Popular</h2>
+                        <div class="columnContainer">
+                            <div class="column">
+                                <input value="15" hidden>
+                                <iframe src="https://www.youtube.com/embed/yC2BYCPB40w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h4><a onclick="detailTravel(this);">BEST Family Holiday Destinations 2020</a></h4>
+                                <p hidden>What are the BEST family holiday destinations in 2020? Here are our top picks.</p>
+                            </div>
+                            <div class="column">
+                                <input value="21" hidden>
+                                <iframe src="https://www.youtube.com/embed/knvxFkvEE1M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h4><a onclick="detailTravel(this);">Mother & Daughter Travel</a></h4>
+                                <p hidden>Carmen and Angelica share their experience as mother and daughter on pilgrimage in France to connect with the sacred feminine.</p>
+                            </div>
+                            <div class="column">
+                                <input value="32" hidden>
+                                <iframe src="https://www.youtube.com/embed/HhILvf0xqFM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h4><a onclick="detailTravel(this);">Exploring Killarney! - Hiking The Crack</a></h4>
+                                <p hidden>This place has been on my list for a very long time and finally made a trip up to this park to experience it for myself. 
+                                    This place is filled with epics scenery and landscapes. and during fall it's a photographers dream!</p>
+                            </div>
+                            <div class="column">
+                                <input value="34" hidden>
+                                <iframe src="https://www.youtube.com/embed/yvR8P3G9mqE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <h4><a onclick="detailTravel(this);">The Arctic Coast Cycling Tour - FULL MOVIE</a></h4>
+                                <p hidden>Follow along as Darren Alff and Sophie Wilkie participate in the "Arctic Coast Cycling Tour" with Active-Norway.com.</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </main>
+                <aside id="right">
+                    <div id="right_section1">
+                        <h2>Notice</h2>
+                        <h3>Parks Canada</h3>
+                        <p><a href="https://www.pc.gc.ca/en/voyage-travel/securite-safety/covid-19-info" target="_blank">
+                            Health and safety measures that may affect your visit are in place due to COVID-19.</a></p>
+                        <h3>Government of Canada</h3>
+                        <p><a href="https://travel.gc.ca/travelling/health-safety/travel-health-notices/221" target="_blank">Check the Pandemic COVID-19 travel health notice</a></p>
+                        <h3>World Health Organization</h3>
+                        <p><a href="https://covid19.who.int/" target="_blank">WHO Coronavirus Disease (COVID-19) Dashboard</a></p>
+                    </div>
+                    <div id="right_section2">
+                        <h2>Official tourist sites</h2>
+                        <div class="touristSites"><a href="https://caen-keepexploring.canada.travel/canada-nice" target="_blank"><img src="images/canada-27003_640.png" alt="Canada">Canada</a></div>
+                        <div class="touristSites"><a href="https://www.visitbritain.com/gb/en" target="_blank"><img src="images/union-jack-26119_640.png" alt="Britain">Britain</a></div>
+                        <div class="touristSites"><a href="https://www.myswitzerland.com/en-ca/" target="_blank"><img src="images/switzerland-26891_640.png" alt="Switzerland">Switzerland</a></div>
+                        <div class="touristSites"><a href="https://www.visittheusa.ca/" target="_blank"><img src="images/united-26177_640.png" alt="United States">United States</a></div>
+                        <div class="touristSites"><a href="http://english.visitkorea.or.kr/" target="_blank"><img src="images/south-32234_640.png" alt="Korea">Korea</a></div>
+                    </div>
+                </aside>
+            </div>
+            <footer>
+                <small> 
+                    <i>Copyright &copy; 2020 Sung-won Kim 300320693<br></i>
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>

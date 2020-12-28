@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Travel Together</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="css/formstyles.css" rel="stylesheet">
+        <script src="js/script.js"></script>
+        <script src="js/scriptdata.js"></script>
+    </head>
+
+    <body>  
+        <div id="wrapper">
+            <header>
+                    <h1>Travel Together</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="themetravel.html">Theme Travel</a></li>
+                    <li><a href="memorableplaces.html">Memorable Places</a></li>
+                    <li><a href="travelroutes.html">Travel Routes</a></li>
+                    <li><a href="mytravel.html">My Travel</a></li>
+                </ul>
+            </nav>
+            <div class="sub_centerContainer">
+                <h2>My Travel</h2>
+                <p>Share and manage your travel experience. Follow your favorite destinations and use them when you travel.</p>
+            </div>
+            <div id="container">
+                <main id="main">
+                    <h2>Add your travel</h2>
+                    <p>Required values are marked by an asterisk (*)</p>
+                    <form method="get"  action="mytravel.html">
+                        <div id="mainContainer">
+                            <fieldset id="travelInfo">
+                                <label for="title">Title*</label>
+                                <input type="text" name="title" id="title">
+
+                                <label for="section">Section*</label>
+                                <input type="search" name="section" id="section" list="section-suggestions">
+                                <datalist id="section-suggestions">
+                                <option value="T001" label="The places in Movies & TV">
+                                <option value="T002" label="Travel with a Food">
+                                <option value="T003" label="Travel with children">
+                                <option value="M001" label="Mother and daughter">
+                                <option value="M002" label="Graduation trip">
+                                <option value="M003" label="Same place, different time">
+                                <option value="R001" label="Hiking routes">
+                                <option value="R002" label="Driving routes">
+                                <option value="R003" label="Bicycle routes">
+                                </datalist>
+
+                                <label class="descLabel" for="description">Description</label>
+                                <textarea name="description" id="description" rows="10" cols="20"></textarea>
+
+                                <label for="uploadType">Upload type*</label>
+                                <select name="uploadType" id="uploadType" size="1">
+                                    <option value="link">URL link</option>
+                                    <option value="file">File upload</option>
+                                </select>
+
+                                <label for="urlLink">URL*</label>
+                                <input type="text" name="urlLink" id="urlLink">
+                                
+                                <label for="urlLink">File*</label>
+                                <input type="button" onclick="document.getElementById('file').click();" id="loadFileXml" value="Browse File from my computer">
+                                <input type="file" style="display:none;" id="file" name="file"/>
+                                <label for="locationMap">Google Map Coordinates(Latitude, Longitude)</label>
+                                <input type="text" name="locationMap" id="locationMap">
+                            </fieldset>
+                        </div>
+                        <div id="mainSubmitCancel">
+                            <input class="button" type="button" onclick="history.back();" value="Back">
+                            <input class="button" id="TravelSubmit" type="submit" value="Submit My Travel">
+                            <input class="button" id="reset" type="reset" value="Reset">
+                        </div>
+                    </form>
+                </main>
+            </div>
+            <footer>
+                <small> 
+                    <i>Copyright &copy; 2020 Sung-won Kim 300320693<br></i>
+                </small>
+            </footer>
+        </div>
+    </body>
+</html>
